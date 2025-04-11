@@ -64,7 +64,7 @@ RUN set -ex; \
     \
 # pecl will claim success even if one install fails, so we need to perform each install separately
     pecl install APCu-5.1.24; \
-    pecl install imagick-3.7.0; \
+    pecl install imagick-3.8.0; \
     pecl install memcached-3.3.0; \
     pecl install redis-6.2.0; \
     \
@@ -118,7 +118,7 @@ RUN { \
 VOLUME /var/www/html
 
 
-ENV NEXTCLOUD_VERSION 29.0.14
+ENV NEXTCLOUD_VERSION 29.0.15
 
 RUN set -ex; \
     fetchDeps=" \

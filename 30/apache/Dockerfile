@@ -64,7 +64,7 @@ RUN set -ex; \
     \
 # pecl will claim success even if one install fails, so we need to perform each install separately
     pecl install APCu-5.1.24; \
-    pecl install imagick-3.7.0; \
+    pecl install imagick-3.8.0; \
     pecl install memcached-3.3.0; \
     pecl install redis-6.2.0; \
     \
@@ -126,7 +126,7 @@ RUN a2enmod headers rewrite remoteip ;\
     } > /etc/apache2/conf-available/remoteip.conf;\
     a2enconf remoteip
 
-ENV NEXTCLOUD_VERSION 30.0.8
+ENV NEXTCLOUD_VERSION 30.0.9
 
 RUN set -ex; \
     fetchDeps=" \
