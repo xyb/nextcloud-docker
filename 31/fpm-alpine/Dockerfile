@@ -106,7 +106,7 @@ RUN { \
 VOLUME /var/www/html
 
 
-ENV NEXTCLOUD_VERSION 31.0.7
+ENV NEXTCLOUD_VERSION 31.0.8
 
 RUN set -ex; \
     apk add --no-cache --virtual .fetch-deps \
